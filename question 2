@@ -1,0 +1,7 @@
+import random
+
+def question_2(n: int) -> (int, float):
+    random_numbers = [random.randint(1, 100) for _ in range(n)]
+    total_sum = sum(random_numbers)
+    average = total_sum / n
+    return total_sum, average
